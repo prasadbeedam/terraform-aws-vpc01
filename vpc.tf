@@ -41,7 +41,7 @@ resource "aws_subnet" "public" { # first name is public[0], second name is publi
   )
 }
 
-## Private Subnet
+####### Private Subnet
 resource "aws_subnet" "private" { # first name is public[0], second name is public[1]
   count = length(var.private_subnet_cidrs)
   availability_zone = local.az_names[count.index]
