@@ -5,7 +5,7 @@ variable "project_name"{
 
 variable "environment"{
     type = string
-    default = "dev"
+    default = "dev01"
 }
 
 variable "common_tags"{
